@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond Seoul — Discover Hidden South Korea | Gyeongju · Jeonju · Sokcho</title>
+  <meta name="description" content="South Korea is more than Seoul and Busan. Explore the ancient city of Gyeongju, the cultural heart of Jeonju, and the coastal paradise of Sokcho — three hidden gems waiting for you.">
+  <meta name="keywords" content="South Korea travel, Gyeongju sightseeing, Jeonju Hanok Village, Sokcho Seoraksan, hidden gems Korea, Korea beyond Seoul">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#e8c170">
+  <meta name="author" content="Beyond Seoul">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Beyond Seoul — Discover Hidden South Korea">
+  <meta property="og:description" content="Explore Gyeongju, Jeonju, and Sokcho — South Korea's most beautiful hidden destinations.">
+  <meta property="og:image" content="assets/gyeongju-hero.png">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Beyond Seoul",
+    "description": "Discover the hidden gems of South Korea beyond Seoul and Busan.",
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-text">Beyond Seoul</div>
+      <div class="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-wrap">
+      <a class="brand" href="#">
+        <span class="brand-icon"><svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#e8c170"/><stop offset="100%" stop-color="#d4a84b"/></linearGradient></defs><path d="M8 48 L32 12 L56 48 Z" stroke="url(#bg)" stroke-width="3" stroke-linejoin="round"/><path d="M14 36 Q32 24 50 36" stroke="url(#bg)" stroke-width="2.5" stroke-linecap="round"/><path d="M22 48 L32 32 L42 48" stroke="url(#bg)" stroke-width="2" stroke-linejoin="round" opacity="0.5"/></svg></span>
+        <span class="brand-text">Beyond Seoul</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <a href="#hero" class="active">Home</a>
+        <a href="#intro">About</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+
+      <!-- Interactive Destination Tabs -->
+      <div class="dest-tabs" id="destTabs">
+        <button class="dest-tab active" data-slide="0">Gyeongju</button>
+        <button class="dest-tab" data-slide="1">Jeonju</button>
+        <button class="dest-tab" data-slide="2">Sokcho</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO SLIDES ============ -->
+    <section class="slides-viewport" id="hero" aria-label="Destination showcase">
+
+      <!-- Slide 1: Gyeongju -->
+      <div class="slide active" data-index="0">
+        <div class="slide-bg">
+          <img src="assets/gyeongju-hero.png" alt="Gyeongju ancient temples and cherry blossoms">
+        </div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-eyebrow">Ancient Capital of Silla</span>
+            <h1 class="slide-title">Gyeongju</h1>
+            <p class="slide-desc">A city frozen in time — where thousand-year-old temples sit beneath cherry blossom canopies and royal tombs rise gently from the earth like sleeping mountains.</p>
+            <a href="#destinations" class="slide-cta">
+              Explore Gyeongju
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="slide-visual">
+            <div class="visual-card">
+              <img src="assets/gyeongju-detail.png" alt="Cheomseongdae Observatory at twilight">
+              <div class="visual-badge">
+                <div class="visual-badge-label">Must see</div>
+                <div class="visual-badge-title">Cheomseongdae Observatory</div>
+              </div>
+            </div>
+            <div class="floating-stat top-right">
+              <div class="floating-stat-num">2,000+</div>
+              <div class="floating-stat-label">Years of History</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Jeonju -->
+      <div class="slide" data-index="1">
+        <div class="slide-bg">
+          <img src="assets/jeonju-hero.png" alt="Jeonju Hanok Village with traditional houses">
+        </div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-eyebrow">Cultural Heart of Korea</span>
+            <h1 class="slide-title">Jeonju</h1>
+            <p class="slide-desc">Walk through 800 traditional hanok houses, taste the birthplace of bibimbap, and feel the soul of Korean culture in every handcrafted detail of this living heritage city.</p>
+            <a href="#destinations" class="slide-cta">
+              Explore Jeonju
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="slide-visual">
+            <div class="visual-card">
+              <img src="assets/jeonju-detail.png" alt="Jeonju Bibimbap in stone bowl">
+              <div class="visual-badge">
+                <div class="visual-badge-label">Iconic dish</div>
+                <div class="visual-badge-title">Jeonju Bibimbap</div>
+              </div>
+            </div>
+            <div class="floating-stat top-right">
+              <div class="floating-stat-num">800+</div>
+              <div class="floating-stat-label">Hanok Houses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Sokcho -->
+      <div class="slide" data-index="2">
+        <div class="slide-bg">
+          <img src="assets/sokcho-hero.png" alt="Sokcho coastline with Seoraksan mountains">
+        </div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <span class="slide-eyebrow">Where Mountains Meet the Sea</span>
+            <h1 class="slide-title">Sokcho</h1>
+            <p class="slide-desc">Dramatic granite peaks of Seoraksan plunge toward the turquoise East Sea — a place where sunrise hikers share trails with temple monks and fresh seafood fills every harbor.</p>
+            <a href="#destinations" class="slide-cta">
+              Explore Sokcho
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+          <div class="slide-visual">
+            <div class="visual-card">
+              <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=800&q=80" alt="Naksansa Temple by the ocean">
+              <div class="visual-badge">
+                <div class="visual-badge-label">Must visit</div>
+                <div class="visual-badge-title">Naksansa Temple</div>
+              </div>
+            </div>
+            <div class="floating-stat top-right">
+              <div class="floating-stat-num">1,708m</div>
+              <div class="floating-stat-label">Daecheongbong Peak</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide navigation -->
+      <div class="slide-indicators" id="slideIndicators">
+        <div class="slide-dot active" data-slide="0"></div>
+        <div class="slide-dot" data-slide="1"></div>
+        <div class="slide-dot" data-slide="2"></div>
+      </div>
+      <div class="slide-counter"><span class="current">01</span> / 03</div>
+      <div class="scroll-hint">
+        <div class="scroll-line"></div>
+        Scroll to explore
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <section class="ticker" aria-label="Destinations ticker">
+      <div class="ticker-track">
+        <span>Gyeongju</span><span>Jeonju</span><span>Sokcho</span>
+        <span>Bulguksa Temple</span><span>Hanok Village</span><span>Seoraksan</span>
+        <span>Hidden Korea</span><span>Beyond Seoul</span><span>Ancient Silla</span>
+        <span>Gyeongju</span><span>Jeonju</span><span>Sokcho</span>
+        <span>Bulguksa Temple</span><span>Hanok Village</span><span>Seoraksan</span>
+        <span>Hidden Korea</span><span>Beyond Seoul</span><span>Ancient Silla</span>
+      </div>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="section section-intro" id="intro">
+      <div class="container intro-grid">
+        <div class="intro-visual reveal-up">
+          <div class="intro-img-wrap">
+            <img src="assets/gyeongju-hero.png" alt="South Korea landscape beyond Seoul">
+          </div>
+        </div>
+        <div class="intro-text reveal-up">
+          <span class="eyebrow">Why go beyond?</span>
+          <h2>South Korea is so much more than its crowded capitals</h2>
+          <p>Most visitors only see Seoul's neon glow or Busan's busy beaches. But step just a few hours away and you'll discover ancient kingdoms, living heritage villages, and untouched coastal beauty that most travelers never find.</p>
+          <p>This guide introduces three destinations that capture the real spirit of Korea — places where history breathes, culture lives in daily life, and nature still takes your breath away.</p>
+          <a href="#destinations" class="btn btn-accent">Discover all three</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="eyebrow">Three Hidden Gems</span>
+          <h2>Places that will change how you see Korea</h2>
+          <p>Each destination offers a completely different experience — from ancient ruins to traditional culture to dramatic coastal landscapes.</p>
+        </div>
+        <div class="dest-grid">
+          <!-- Gyeongju Card -->
+          <article class="dest-card reveal-up" data-dest="gyeongju">
+            <div class="dest-card-img">
+              <img src="assets/gyeongju-hero.png" alt="Gyeongju temples and royal tombs">
+            </div>
+            <div class="dest-card-body">
+              <span class="dest-card-tag">Ancient Capital</span>
+              <h3>Gyeongju — Museum Without Walls</h3>
+              <p>The former capital of the Silla Kingdom (57 BC – 935 AD) is an open-air museum. Visit Bulguksa Temple (UNESCO), the royal tomb mounds of Tumuli Park, and the oldest astronomical observatory in East Asia.</p>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-card-link">
+                Explore
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Jeonju Card -->
+          <article class="dest-card reveal-up" data-dest="jeonju">
+            <div class="dest-card-img">
+              <img src="assets/jeonju-hero.png" alt="Jeonju Hanok Village street">
+            </div>
+            <div class="dest-card-body">
+              <span class="dest-card-tag">Cultural Heritage</span>
+              <h3>Jeonju — Soul of Korean Culture</h3>
+              <p>Home to 800+ hanok traditional houses, Jeonju is the birthplace of bibimbap and a UNESCO Creative City of Gastronomy. Wear hanbok, explore craft workshops, and taste Korea's culinary soul.</p>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-card-link">
+                Explore
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Sokcho Card -->
+          <article class="dest-card reveal-up" data-dest="sokcho">
+            <div class="dest-card-img">
+              <img src="assets/sokcho-hero.png" alt="Sokcho coast and Seoraksan peaks">
+            </div>
+            <div class="dest-card-body">
+              <span class="dest-card-tag">Coastal Paradise</span>
+              <h3>Sokcho — Mountains Meet Ocean</h3>
+              <p>Gateway to Seoraksan National Park, Sokcho offers granite peaks, hot springs, fresh seafood markets, and the stunning Naksansa Temple perched above the East Sea sunrise.</p>
+            </div>
+            <div class="dest-card-footer">
+              <span class="dest-card-link">
+                Explore
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HIGHLIGHTS ============ -->
+    <section class="section" id="highlights">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="eyebrow">Why These Places</span>
+          <h2>What makes them special</h2>
+          <p>These aren't just alternatives to Seoul — they are destinations that deserve to be on every traveler's list.</p>
+        </div>
+        <div class="highlights-grid">
+          <article class="highlight-card reveal-up">
+            <div class="highlight-icon">🏛️</div>
+            <h3>Living History</h3>
+            <p>From Silla-era royal tombs to Joseon-dynasty hanok villages — these places let you walk through centuries, not just read about them.</p>
+          </article>
+          <article class="highlight-card reveal-up">
+            <div class="highlight-icon">🍜</div>
+            <h3>Authentic Cuisine</h3>
+            <p>Taste bibimbap where it was invented, eat fresh squid from the harbor at dawn, and discover regional flavors you won't find in Seoul.</p>
+          </article>
+          <article class="highlight-card reveal-up">
+            <div class="highlight-icon">⛰️</div>
+            <h3>Breathtaking Nature</h3>
+            <p>Seoraksan's granite peaks, Gyeongju's lotus ponds, and Jeonju's surrounding bamboo forests — nature here is dramatic and pristine.</p>
+          </article>
+          <article class="highlight-card reveal-up">
+            <div class="highlight-icon">🎎</div>
+            <h3>Cultural Immersion</h3>
+            <p>Wear hanbok in a real village, stay in a traditional hanok guesthouse, and learn from artisans keeping centuries-old crafts alive.</p>
+          </article>
+          <article class="highlight-card reveal-up">
+            <div class="highlight-icon">🌅</div>
+            <h3>No Crowds</h3>
+            <p>Enjoy world-class sights without the overwhelming crowds. These gems are popular with locals but still wonderfully peaceful for visitors.</p>
+          </article>
+          <article class="highlight-card reveal-up">
+            <div class="highlight-icon">🚄</div>
+            <h3>Easy to Reach</h3>
+            <p>All three destinations are accessible by KTX high-speed rail or express bus from Seoul in 2-3 hours. Perfect for day trips or weekend getaways.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <span class="eyebrow">Visual Journey</span>
+          <h2>A glimpse of what awaits</h2>
+          <p>Hover over each photo to discover more about these incredible destinations.</p>
+        </div>
+        <div class="gallery-row reveal-up">
+          <div class="gallery-item">
+            <img src="assets/gyeongju-hero.png" alt="Gyeongju temple at golden hour">
+            <div class="gallery-caption">
+              <h4>Bulguksa Temple</h4>
+              <span>Gyeongju · UNESCO Heritage</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/gyeongju-detail.png" alt="Cheomseongdae Observatory">
+            <div class="gallery-caption">
+              <h4>Cheomseongdae</h4>
+              <span>Gyeongju · 7th Century</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/jeonju-hero.png" alt="Jeonju Hanok Village rooftops">
+            <div class="gallery-caption">
+              <h4>Hanok Village</h4>
+              <span>Jeonju · Living Heritage</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/jeonju-detail.png" alt="Jeonju bibimbap dish">
+            <div class="gallery-caption">
+              <h4>Jeonju Bibimbap</h4>
+              <span>Jeonju · Culinary Icon</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sokcho-hero.png" alt="Seoraksan mountain vista">
+            <div class="gallery-caption">
+              <h4>Seoraksan Peak</h4>
+              <span>Sokcho · National Park</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1590559899731-a382839e5549?w=800&q=80" alt="Naksansa Temple seaside">
+            <div class="gallery-caption">
+              <h4>Naksansa Temple</h4>
+              <span>Sokcho · Seaside Temple</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section-cta">
+      <div class="container">
+        <div class="cta-card reveal-up">
+          <h2>Ready to go beyond Seoul?</h2>
+          <p>Start planning your journey to discover the South Korea that most travelers never see. History, culture, and nature are waiting.</p>
+          <div class="cta-actions">
+            <a href="#hero" class="btn btn-accent">Back to top</a>
+            <a href="#destinations" class="btn btn-outline">Explore destinations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Beyond Seoul</div>
+          <p class="footer-desc">Helping travelers discover the hidden beauty of South Korea — one destination at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <a href="#hero" data-slide-link="0">Gyeongju</a>
+          <a href="#hero" data-slide-link="1">Jeonju</a>
+          <a href="#hero" data-slide-link="2">Sokcho</a>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#intro">About</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Beyond Seoul. All rights reserved.</span>
+        <span>Built with ♥ for Korea lovers</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

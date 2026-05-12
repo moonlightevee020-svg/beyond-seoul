@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c170"/>
+      <stop offset="100%" stop-color="#d4a84b"/>
+    </linearGradient>
+  </defs>
+  <!-- Mountain peak -->
+  <path d="M8 48 L32 12 L56 48 Z" fill="none" stroke="url(#g)" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Hanok roof curve -->
+  <path d="M14 36 Q32 24 50 36" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Small accent peak -->
+  <path d="M22 48 L32 32 L42 48" fill="none" stroke="url(#g)" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+</svg>
