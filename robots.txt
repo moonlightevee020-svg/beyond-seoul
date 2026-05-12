@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moonlightevee020-svg.github.io/beyond-seoul/sitemap.xml
